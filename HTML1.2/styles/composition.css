@@ -1,0 +1,49 @@
+/* Conteneur avec scroll snap horizontal */
+.scroll-container,
+.gallery {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x ;
+    gap: 1.5rem;
+    padding: 1rem 0;
+    margin-bottom: 2rem;
+    scroll-snap-align: start ;
+}
+
+/* Alignement snap pour chaque carte et article */
+.scroll-container .carte-container,
+.gallery article {
+    scroll-snap-align: start;
+    flex-shrink: 0;
+}
+
+/* Section gens (si utilisée ailleurs) */
+.game {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+/* Personnalisation de la scrollbar */
+.scroll-container::-webkit-scrollbar,
+.gallery::-webkit-scrollbar {
+    height: 10px;
+}
+
+.scroll-container::-webkit-scrollbar-track,
+.gallery::-webkit-scrollbar-track {
+    background: #1e293b;
+    border-radius: 10px;
+}
+
+.scroll-container::-webkit-scrollbar-thumb,
+.gallery::-webkit-scrollbar-thumb {
+    background: var(--couleur-accent);
+    border-radius: 10px;
+}
+
+.scroll-container::-webkit-scrollbar-thumb:hover,
+.gallery::-webkit-scrollbar-thumb:hover {
+    background: #6b5d52;
+}

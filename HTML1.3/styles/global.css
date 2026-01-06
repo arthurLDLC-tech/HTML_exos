@@ -1,0 +1,27 @@
+body {
+    background-color: var(--fond-page);
+    color: var(--texte-principal);
+    font-family: var(--font-texte);
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    color: var(--titre-principal);
+    font-family: var(--font-titre);
+    font-size: 3rem;
+    margin-bottom: 50px;
+    border-bottom: 4px solid var(--couleur-accent);
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+h3 {
+    color: var(--titre-principal);
+    font-family: var(--font-titre);
+    font-size: 2rem;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}

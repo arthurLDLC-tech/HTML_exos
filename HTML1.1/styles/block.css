@@ -1,0 +1,76 @@
+
+.description-box {
+    background-color: var(--fond-boite-texte);
+    border-left: 4px solid var(--couleur-accent);
+    padding: 20px;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 600px;
+    border-radius: var(--arrondi);
+    text-align: left;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+}
+
+
+
+
+.carte-container {
+    width: var(--largeur-carte);
+    height: var(--hauteur-carte);
+    perspective: 1000px;
+    background-color: transparent;
+}
+
+.carte {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.carte-container:hover .carte {
+    transform: rotateY(180deg);
+}
+
+.face-avant, .face-arriere {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: var(--arrondi);
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+}
+
+.face-arriere {
+    background-color: var(--fond-dos-carte);
+    transform: rotateY(180deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--couleur-accent);
+    box-sizing: border-box; 
+}
+
+.boutons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 80%;
+}
+
+.btn-insta {
+    background-color: var(--btn-insta);
+    color: var(--texte-btn);
+    padding: 12px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    text-transform: uppercase;
+    display: block;
+}
+
+
+

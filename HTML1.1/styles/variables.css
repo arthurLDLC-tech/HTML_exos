@@ -1,0 +1,25 @@
+:root {
+    
+    --fond-page: #0f172a;        
+    --texte-principal: #cbd5e1;  
+    --titre-principal: #ffffff;  
+    --couleur-accent: #483c32;   
+    
+    
+    --fond-boite-texte: #1e293b; 
+    --fond-dos-carte: #171a21;   
+
+    
+    --btn-insta: #d515ef;
+   
+    --texte-btn: #ffffff;
+
+    
+    --font-titre: 'Montserrat', sans-serif;
+    --font-texte: 'Roboto', sans-serif;
+
+    
+    --largeur-carte: 320px;
+    --hauteur-carte: 450px;
+    --arrondi: 12px;
+}
